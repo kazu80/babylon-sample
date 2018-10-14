@@ -20,7 +20,8 @@
         var light2 = new BABYLON.PointLight("light2", new BABYLON.Vector3(0, 1, -1), scene);
 
         // Add and manipulate meshes in the scene
-        var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter:2}, scene);
+        var myPlane = BABYLON.MeshBuilder.CreatePlane("myPlane", {width: 5, height: 2}, scene);
+
 
         return scene;
     };
